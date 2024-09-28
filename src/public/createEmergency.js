@@ -69,14 +69,7 @@ document.getElementById('apiForm').addEventListener('submit', async function (ev
     const data = Object.fromEntries(formData.entries());
 
     try {
-        // Send data to the API
-        const response = await fetch('https://sio-app-b3qb.onrender.com/api/emergencies', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
+     let response = await axios.post("https://sio-app-b3qb.onrender.com/api/emergencies", data)
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
