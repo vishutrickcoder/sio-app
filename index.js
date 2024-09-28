@@ -184,7 +184,7 @@ const io = new Server(server, {
 app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json({ limit: '10kb' }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'src/public')));
 
 // Logger setup
 const logger = winston.createLogger({
@@ -253,7 +253,7 @@ app.get('/', (req, res) => {
 
 // Serve nurse dashboard
 app.get('/nurse-dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'nurse-dashboard.html'));
+    res.sendFile(path.join(__dirname, 'src/public', 'nurse-dashboard.html'));
 });
 
 // Error handling middleware
