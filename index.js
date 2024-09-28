@@ -212,7 +212,7 @@ io.on('connection', (socket) => {
 });
 
 // API to create emergency
-app.post('https://sio-app-b3qb.onrender.com', [
+app.post('/api/emergencies', [
     body('type').isString().trim().notEmpty(),
     body('message').isString().trim().notEmpty(),
     body('severity').isInt({ min: 1, max: 5 }).withMessage('Severity must be between 1 and 5'),
