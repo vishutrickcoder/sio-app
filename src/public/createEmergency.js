@@ -70,7 +70,7 @@ document.getElementById('apiForm').addEventListener('submit', async function (ev
 
     try {
         // Send data to the API
-        const response = await fetch('http://localhost:3000/api/emergencies', {
+        const response = await fetch('https://sio-app-b3qb.onrender.com/api/emergencies', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
