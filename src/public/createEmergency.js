@@ -60,7 +60,7 @@
 //     }
 // });
 
-
+const axios = require("axios")
 document.getElementById('apiForm').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
 
