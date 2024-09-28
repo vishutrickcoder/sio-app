@@ -248,12 +248,12 @@ app.post('/api/emergencies', [
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'emergency.html'));
+    res.sendFile(path.join(__dirname, 'src/public', 'emergency.html'));
 });
 
 // Serve nurse dashboard
 app.get('/nurse-dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'nurse-dashboard.html'));
+    res.sendFile(path.join(__dirname, 'src/public', 'nurse-dashboard.html'));
 });
 
 // Error handling middleware
