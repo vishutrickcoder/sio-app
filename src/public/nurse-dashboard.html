@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="notifications.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .notifications {
+            color: white;
+            background-color: rgb(138, 138, 138);
+        }
+
+        .notification {
+            margin: 10px 15px;
+            background-color: rgb(138, 138, 138);
+            box-shadow: 5px 5px 5px rgb(255, 155, 155);
+        }
+
+        .text-center {
+            font-weight: bold;
+        }
+
+        .notification-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notification-time {
+            font-size: 0.8em;
+            color: rgb(255, 117, 117);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Nurse Dashboard</h1>
+        <div id="notifications" class="mt-4"></div>
+    </div>
+
+    <audio id="notification-sound" src="./notification-sound.mp3" preload="auto"></audio>
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="notifications.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .notifications {
+            color: white;
+            background-color: rgb(138, 138, 138);
+        }
+
+        .notification {
+            margin: 10px 15px;
+            background-color: rgb(138, 138, 138);
+            box-shadow: 5px 5px 5px rgb(255, 155, 155);
+        }
+
+        .text-center {
+            font-weight: bold;
+        }
+
+        .notification-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notification-time {
+            font-size: 0.8em;
+            color: rgb(255, 117, 117);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Nurse Dashboard</h1>
+        <div id="notifications" class="mt-4"></div>
+        <div id="emergency-list" class="mt-4"></div>
+    </div>
+
+    <audio id="notification-sound" src="./notification-sound.mp3" preload="auto"></audio>
+
+</body>
+
+</html>
